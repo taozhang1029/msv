@@ -8,28 +8,28 @@
     <meta name="keywords" content="在线视频,免费视频,视频搜索,电影,电视剧,LibreTV">
     <meta name="author" content="LibreTV Team">
     <meta name="robots" content="index, follow">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://libretv.is-an.org/">
     <meta property="og:title" content="LibreTV - 免费在线视频搜索与观看平台">
     <meta property="og:description" content="搜索并观看来自多个视频源的内容，支持多种设备，无需注册即可使用。">
     <meta property="og:image" content="https://images.icon-icons.com/38/PNG/512/retrotv_5520.png">
-    
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://libretv.is-an.org/">
     <meta property="twitter:title" content="LibreTV - 免费在线视频搜索与观看平台">
     <meta property="twitter:description" content="搜索并观看来自多个视频源的内容，支持多种设备，无需注册即可使用。">
     <meta property="twitter:image" content="https://images.icon-icons.com/38/PNG/512/retrotv_5520.png">
-    
+
     <!-- Favicon -->
     <link rel="icon" href="https://images.icon-icons.com/38/PNG/512/retrotv_5520.png">
     <link rel="apple-touch-icon" href="https://images.icon-icons.com/38/PNG/512/retrotv_5520.png">
-    
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://libretv.is-an.org/">
-    
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -53,21 +53,21 @@
             <!-- 数据源设置区域 -->
             <div class="p-3 bg-[#151515] rounded-lg shadow-inner">
                 <label class="block text-sm font-medium text-gray-400 mb-3 border-b border-[#333] pb-1">数据源设置</label>
-                
+
                 <!-- 批量操作按钮 -->
                 <div class="flex space-x-2 mb-3">
                     <button onclick="selectAllAPIs(true)" class="px-2 py-1 bg-[#333] hover:bg-[#444] text-white text-xs rounded">全选</button>
                     <button onclick="selectAllAPIs(false)" class="px-2 py-1 bg-[#333] hover:bg-[#444] text-white text-xs rounded">全不选</button>
                     <button onclick="selectAllAPIs(true, true)" class="px-2 py-1 bg-[#333] hover:bg-[#444] text-white text-xs rounded">全选普通资源</button>
                 </div>
-                
+
                 <!-- API选择区域 - 使用滚动区域 -->
                 <div class="max-h-40 overflow-y-auto bg-[#191919] p-2 rounded-lg mb-3">
                     <div id="apiCheckboxes" class="grid grid-cols-2 gap-2">
                         <!-- 这里将动态插入API复选框 -->
                     </div>
                 </div>
-                
+
                 <!-- API信息显示 -->
                 <div class="text-xs text-gray-500 flex justify-between items-center">
                     <span>已选API数量：<span id="selectedApiCount" class="text-white">0</span></span>
@@ -84,7 +84,7 @@
                 <div id="customApisList" class="max-h-32 overflow-y-auto mb-2">
                     <!-- 自定义API将显示在这里 -->
                 </div>
-                
+
                 <!-- 添加自定义API表单 (默认隐藏) -->
                 <div id="addCustomApiForm" class="hidden mt-2 p-2 bg-[#191919] rounded-lg">
                     <input type="text" id="customApiName" placeholder="API名称" class="w-full bg-[#222] border border-[#333] text-white px-2 py-1 rounded mb-2">
@@ -100,11 +100,11 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- 内容过滤设置区域 -->
             <div class="p-3 bg-[#151515] rounded-lg shadow-inner">
                 <label class="block text-sm font-medium text-gray-400 mb-3 border-b border-[#333] pb-1">内容过滤</label>
-                
+
                 <!-- 黄色内容过滤开关 -->
                 <div class="flex flex-col mb-3 pb-3 border-b border-[#222] relative">
                     <div class="flex items-center justify-between">
@@ -120,7 +120,7 @@
                     </div>
                     <!-- 警告提示将在这里动态插入 -->
                 </div>
-                
+
                 <!-- 广告过滤开关 -->
                 <div class="flex items-center justify-between">
                     <div>
@@ -149,24 +149,24 @@
                 </div>
                 <p class="text-gray-400 mb-8">自由观影，畅享精彩</p>
             </header>
-            
+
             <!-- 搜索区域：默认居中 -->
             <div id="searchArea" class="flex-1 flex flex-col items-center justify-center">
                 <h2 class="text-3xl font-bold gradient-text mb-8">视频搜索</h2>
                 <div class="w-full max-w-2xl">
                     <div class="flex">
-                        <input type="text" 
-                               id="searchInput" 
-                               class="w-full bg-[#111] border border-[#333] text-white px-6 py-4 rounded-l-lg focus:outline-none focus:border-white transition-colors" 
+                        <input type="text"
+                               id="searchInput"
+                               class="w-full bg-[#111] border border-[#333] text-white px-6 py-4 rounded-l-lg focus:outline-none focus:border-white transition-colors"
                                placeholder="搜索你喜欢的视频..."
                                aria-label="视频搜索框">
-                        <button onclick="search()" 
-                                class="px-8 py-4 bg-white text-black font-medium rounded-r-lg hover:bg-gray-200 transition-colors"
+                        <button onclick="search()"
+                                class="w-32 px-6 py-2 bg-white text-black font-medium rounded-r-lg hover:bg-gray-200 transition-colors"
                                 aria-label="搜索按钮">
                             搜索
                         </button>
                     </div>
-                    
+
                     <!-- 添加最近搜索记录部分 -->
                     <div id="recentSearches" class="mt-4 flex flex-wrap gap-2" aria-label="最近搜索记录">
                         <!-- 这里会动态插入最近的搜索记录 -->
@@ -174,7 +174,7 @@
                     <!-- 清除历史按钮已移至搜索历史标题行 -->
                 </div>
             </div>
-            
+
             <!-- 搜索结果：初始隐藏 -->
             <div id="resultsArea" class="w-full hidden">
                 <div id="results" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -184,7 +184,7 @@
     </div>
 
     <!-- 页脚区域 -->
-    <footer class="footer mt-8 py-6 border-t border-[#333] bg-[#0a0a0a]">
+    <footer class="footer mt-8 py-6 border-t border-[#333] bg-[#0a0a0a]" style="display: none">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-4 md:mb-0">
@@ -196,7 +196,7 @@
                     </div>
                     <p class="text-gray-500 text-sm mt-2 text-center md:text-left">© 2025 LibreTV - 自由观影，畅享精彩</p>
                 </div>
-                
+
                 <div class="text-center md:text-right">
                     <p class="text-gray-500 text-sm max-w-md">
                         免责声明：本站仅为视频搜索工具，不存储、上传或分发任何视频内容。
