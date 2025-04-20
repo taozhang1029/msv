@@ -30,11 +30,6 @@ const API_SITES = {
         api: 'https://tyyszy.com',
         name: '天涯资源',
     },
-    ckzy: {
-        api: 'https://www.ckzy1.com',
-        name: 'CK资源',
-        adult: true
-    },
     zy360: {
         api: 'https://360zy.com',
         name: '360资源',
@@ -73,6 +68,11 @@ const API_SITES = {
         name: '如意资源',
     },
 
+    // ckzy: {
+    //     api: 'https://www.ckzy1.com',
+    //     name: 'CK资源',
+    //     adult: true
+    // },
     // jkun: {
     //     api: 'https://jkunzyapi.com',
     //     name: 'jkun资源',
