@@ -359,7 +359,7 @@ async function handleAggregatedSearch(searchQuery) {
             
             // 使用Promise.race添加超时处理
             const timeoutPromise = new Promise((_, reject) => 
-                setTimeout(() => reject(new Error(`${source}源搜索超时`)), 8000)
+                setTimeout(() => reject(new Error(`${source}源搜索超时`)), 5000)
             );
             
             const fetchPromise = fetch(PROXY_URL + encodeURIComponent(apiUrl), {

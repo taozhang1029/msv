@@ -1,6 +1,7 @@
 // 全局常量配置
 
-const PROXY_URL = 'https://cors.zme.ink/';
+// const PROXY_URL = 'https://cors.zme.ink/';
+const PROXY_URL = 'https://seep.eu.org/';
 const HOPLAYER_URL = 'https://hoplayer.com/index.html';
 const SEARCH_HISTORY_KEY = 'videoSearchHistory';
 const MAX_HISTORY_ITEMS = 5;
@@ -16,11 +17,11 @@ const SITE_CONFIG = {
 
 // API站点配置
 const API_SITES = {
-    heimuer: {
-        api: 'https://json.heimuer.xyz',
-        name: '黑木耳',
-        detail: 'https://heimuer.tv'
-    },
+    // heimuer: {
+    //     api: 'https://json.heimuer.xyz',
+    //     name: '黑木耳',
+    //     detail: 'https://heimuer.tv'
+    // },
     ffzy: {
         api: 'http://ffzy5.tv',
         name: '非凡影视',
@@ -38,19 +39,19 @@ const API_SITES = {
         api: 'https://wolongzyw.com',
         name: '卧龙资源',
     },
-    cjhw: {
-        api: 'https://cjhwba.com',
-        name: '新华为',
-    },
+    // cjhw: {
+    //     api: 'https://cjhwba.com',
+    //     name: '新华为',
+    // },
     jisu: {
         api: 'https://jszyapi.com',
         name: '极速资源',
         detail: 'https://jszyapi.com'
     },
-    dbzy: {
-        api: 'https://dbzy.com',
-        name: '豆瓣资源',
-    },
+    // dbzy: {
+    //     api: 'https://dbzy.com',
+    //     name: '豆瓣资源',
+    // },
     bfzy: {
         api: 'https://bfzyapi.com',
         name: '暴风资源',
