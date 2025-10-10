@@ -35,8 +35,11 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="page-bg text-white">
-<div class="fixed top-4 left-4 z-50 flex items-center space-x-4">
-    <button onclick="toggleSettings(event)"
+
+<!-- 设置按钮 -->
+<div class="fixed top-4 left-4 z-30 flex items-center space-x-4">
+    <button id="toggleSettingsBtn"
+            onclick="toggleSettings(event)"
             class="bg-[#222] hover:bg-[#333] border border-[#333] hover:border-white rounded-lg px-4 py-2 transition-colors"
             aria-label="打开设置">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
