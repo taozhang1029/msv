@@ -6,9 +6,7 @@
 
 本项目基于 https://github.com/bestK/tv
 
-演示站：https://libretv.is-an.org/
-
-**感谢 [NodeSupport](https://www.nodeseek.com/post-305185-1) 友情赞助**
+参考：https://libretv.is-an.org/
 
 ## ✨ 主要特性
 
@@ -24,7 +22,7 @@
 
 ## ⌨️ 键盘快捷键
 
-LibreTV播放器支持以下键盘快捷键：
+播放器支持以下键盘快捷键：
 
 - **Alt + 左箭头**：播放上一集
 - **Alt + 右箭头**：播放下一集
@@ -35,7 +33,7 @@ LibreTV播放器支持以下键盘快捷键：
 
 ## 📹 视频源支持说明
 
-LibreTV 默认支持以下几种视频源接口：
+默认支持以下几种视频源接口：
 - 黑木耳影视 (heimuer)
 - 非凡影视 (ffzy)
 - 天涯资源 (tyyszy)
@@ -136,7 +134,7 @@ services:
 ## 🌟 项目结构
 
 ```
-LibreTV/
+/
 ├── css/
 │   └── styles.css       // 自定义样式
 ├── js/
