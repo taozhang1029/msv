@@ -1,14 +1,12 @@
-# LibreTV - 免费在线视频搜索与观看平台
+# 在线视频搜索与观看平台
 
 ## 📺 项目简介
 
-LibreTV是一个轻量级、免费的在线视频搜索与观看平台，提供来自多个视频源的内容搜索与播放服务。无需注册，即开即用，支持多种设备访问。项目采用纯前端技术构建，可轻松部署在各类静态网站托管服务上。
+一个轻量级在线视频搜索与观看平台，提供来自多个视频源的内容搜索与播放服务。无需注册，即开即用，支持多种设备访问。项目采用纯前端技术构建，可轻松部署在各类静态网站托管服务上。
 
 本项目基于 https://github.com/bestK/tv
 
 演示站：https://libretv.is-an.org/
-
-<img src="https://testingcf.jsdelivr.net/gh/bestZwei/imgs@master/picgo/image-20250406231222216.png" alt="image-20250406231222216" style="zoom:67%;" />
 
 **感谢 [NodeSupport](https://www.nodeseek.com/post-305185-1) 友情赞助**
 
@@ -151,18 +149,3 @@ LibreTV/
 ├── robots.txt           // 搜索引擎爬虫配置
 └── sitemap.xml          // 站点地图
 ```
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=bestZwei/LibreTV&type=Date)](https://www.star-history.com/#bestZwei/LibreTV&Date)
-
-## ⚠️ 免责声明
-
-LibreTV 仅作为视频搜索工具，不存储、上传或分发任何视频内容。所有视频均来自第三方API接口提供的搜索结果。如有侵权内容，请联系相应的内容提供方。
-
-## 🔄 更新日志
-
-- 1.0.0 (2025-04-06): 初始版本发布
-- 1.0.1 (2025-04-07): 添加广告过滤功能，优化播放器性能
-- 1.0.2 (2025-04-08): 分离了播放页面，优化视频源API兼容性
-- 1.0.3 (2025-04-13): 性能优化、ui优化、更新设置功能
